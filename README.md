@@ -1,7 +1,7 @@
 This repository contains two projects:
 
-1. VAD from Scratch (tensorflow)
-2. Speaker Verification on the STM32L4R9I-DISCOVERY Board (pytorch)
+1. VAD (Tensorflow)
+2. Speaker Verification on the STM32L4R9I-DISCOVERY Board (PyTorch)
 
 The Speaker Verification project includes C and Python folders.
 To use the model on the evaluation board, follow these steps:
