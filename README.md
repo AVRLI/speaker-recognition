@@ -7,7 +7,7 @@ The Speaker Verification project includes C and Python folders.
 To use the model on the evaluation board, follow these steps:
 
 1. Burn the C folder onto the board using the ST IDE.
-2. Load the python/onnx/onnx_model into the X-CUBE-AI package.
+2. Load the python/onnx/model_onnx into the X-CUBE-AI package.
 3. Extract the Middlewares and X-CUBE-AI folders from the software.
 4. Debug the code.
 
