@@ -13,7 +13,7 @@ To use the model on the evaluation board, follow these steps:
 
 A demo is provided here.
 After the BIP sound, we can hear the enrolled speaker's audio.
-In the upper left corner of the screen, we can see the cosine similarity score between the enrolled embeddings and the embedding generated every second.
+In the upper right corner of the screen, we can see the cosine similarity score between the enrolled embeddings and the embedding generated every second.
 If the score exceeds the threshold, an LED lights up:
 
 Orange LED: Indicates the enrolled male speaker.
