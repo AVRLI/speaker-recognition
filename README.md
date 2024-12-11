@@ -14,15 +14,13 @@ To train the speaker verification model, follow the Jupyter notebooks provided i
 
 To deploy and use the model on the STM32 evaluation board, follow these steps:
 
-Flash the contents of the C folder onto the STM32 board using the STM32 IDE.
+Flash the contents of the C folder onto the STM32 board using the ST IDE software.
 
 Use the X-CUBE-AI package to load the ONNX model file located at python/onnx/model_onnx.
 
-Extract the Middlewares and X-CUBE-AI folders from the generated software.
+Extract the Middlewares and X-CUBE-AI folders from the software.
 
-Use the STM32 IDE to debug and run the code on the board.
-
-A demo is included with the following features:
+Use the IDE to debug and run the code on the board.
 
 A demo is provided here. After the BIP sound, we can hear the enrolled speaker's audio.
 In the upper right corner of the screen, we can see the cosine similarity score between the enrolled embeddings and the embedding generated every second.
