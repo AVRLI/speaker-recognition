@@ -2,6 +2,7 @@
 This repository contains two projects:
 
 Voice Activity Detection (VAD) - Implemented in TensorFlow.
+
 Speaker Verification - implemented in PyTorch and deployed on the STM32L4R9I-DISCOVERY Board.
 
 The Speaker Verification project includes:
