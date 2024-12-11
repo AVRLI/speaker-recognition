@@ -1,20 +1,30 @@
+
 This repository contains two projects:
 
-1. VAD (Tensorflow)
-2. Speaker Verification on the STM32L4R9I-DISCOVERY Board (PyTorch)
+Voice Activity Detection (VAD) - Implemented in TensorFlow.
+Speaker Verification - implemented in PyTorch and deployed on the STM32L4R9I-DISCOVERY Board.
 
-The Speaker Verification project includes C and Python folders.
-To use the model on the evaluation board, follow these steps:
+The Speaker Verification project includes:
 
-1. Burn the C folder onto the board using the ST IDE.
-2. Load the python/onnx/model_onnx into the X-CUBE-AI package.
-3. Extract the Middlewares and X-CUBE-AI folders from the software.
-4. Debug the code.
+A C folder containing code for deployment on the STM32 board.
+A Python folder containing Jupyter notebooks for training the model.
 
-A demo is provided here.
-After the BIP sound, we can hear the enrolled speaker's audio.
+To train the speaker verification model, follow the Jupyter notebooks provided in the python folder. The model is trained on the VoxCeleb1 training dataset, validated on the VoxCeleb1 validation dataset, and can be tested on the VoxCeleb2 test dataset. Verification lists are available in the dataset list folder. Note that the VoxCeleb2 data may need to be converted to WAV format using ffmpeg before testing.
+
+To deploy and use the model on the STM32 evaluation board, follow these steps:
+
+Flash the contents of the C folder onto the STM32 board using the STM32 IDE.
+
+Use the X-CUBE-AI package to load the ONNX model file located at python/onnx/model_onnx.
+
+Extract the Middlewares and X-CUBE-AI folders from the generated software.
+
+Use the STM32 IDE to debug and run the code on the board.
+
+A demo is included with the following features:
+
+A demo is provided here. After the BIP sound, we can hear the enrolled speaker's audio.
 In the upper right corner of the screen, we can see the cosine similarity score between the enrolled embeddings and the embedding generated every second.
 If the score exceeds the threshold, a LED lights up:
-
 Orange LED: Indicates the enrolled male speaker.
 Green LED: Indicates the enrolled female speaker.
